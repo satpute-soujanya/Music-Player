@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Player</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player_container">
+      <!-- Song -->
+      <div class="img_container">
+        <img src="./images/01_Blank_space.jpeg" alt="blank_space" />
+      </div>
+      <h2 id="song_title">Blank Spaces</h2>
+      <h3 id="song_artist">Taylor Swift</h3>
+      <audio src="./songs/01_Blank_space.mp3"></audio>
+      <div class="progress_container" id="progress_container">
+        <div class="progress" id="progress"></div>
+        <div class="duration_wrapper">
+          <span id="current_time">0:00</span>
+          <span id="duration">4:35</span>
+        </div>
+      </div>
+      <!-- Controls -->
+      <div class="player_controls">
+        <i class="fas fa-backward" id="previous" title="Previous"></i>
+        <i class="fas fa-play main_button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
